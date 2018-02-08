@@ -9,17 +9,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar-left">
-
-        </aside>
         <div class="wrapper">
             <header>
                 <div id="header">
                     <nav>
                         <ul>
-                            <li><a href="#" id="hidde" onclick="myFunction()">Hidden/Show</a></li>
-                            <!--<li><a href="#" id="slow">Show</a></li>-->
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#"  onclick="myFunctionL()">Aside Left</a></li>
+                            <li><a href="#" onclick="myFunctionR()">Aside Right</a></li>
                         </ul>
                     </nav>
 
@@ -48,29 +45,36 @@
 
                     </article>
 
-                    <div class="visible-block">
+                    <section class="visible-block">
 
-                    </div>
+                    </section>
 
                 </section>
+                <aside class="sidebar-left">
+
+                </aside>
+                <aside class="sidebar-right">
+
+                </aside>
+                <footer>
+
+                </footer>
 
 
             </main>
-            <footer>
 
-            </footer>
         </div>
-        <aside class="sidebar-right">
 
-        </aside>
-    </div>
 
     <script>
-        function myFunction() {
+        function myFunctionL() {
             var elementL = document.querySelector(".sidebar-left");
+
+            elementL.classList.toggle("openL");
+        }
+        function myFunctionR() {
             var elementR = document.querySelector(".sidebar-right");
-            elementL.classList.toggle("closeL");
-            elementR.classList.toggle("closeR");
+            elementR.classList.toggle("openR");
         }
     </script>
 
