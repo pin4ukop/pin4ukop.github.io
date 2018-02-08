@@ -82,9 +82,9 @@ main {
 .page{
     height: 100px;
     background: darkseagreen;
-    top:40px;
-    position: sticky;
-    position: -webkit-sticky;
+    /*top:40px;*/
+    /*position: sticky;*/
+    /*position: -webkit-sticky;*/
     margin: 20px;
 
 
@@ -94,7 +94,14 @@ main {
     width:25%;
     background: #f9ff56;
     margin: 20px;
+
 }
+.block{
+    top:40px;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
 .flex-wrap{
     display: flex;
     display: -webkit-box;
